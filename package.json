@@ -1,0 +1,16 @@
+{
+  "name": "fake partner",
+  "version": "1.0.0",
+  "description": "fake partner",
+  "engines": {
+    "node": "8.9.3"
+  },
+  "main": "serveur.js",
+  "scripts": {
+    "start": "node serveur.js"
+  },
+  "dependencies": {
+    "express": "4.16.3",
+	"body-parser": "1.18.2"
+  }
+}
