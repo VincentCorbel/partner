@@ -42,9 +42,15 @@ app.post('/partner', function (req, res) {
   
 })
 
-app.get('/photo', function (req, res) {
+app.post('/photo', function (req, res) {
   console.log(req.body);
-  res.send('Hello photo');
+  
+ fs.readFile('photo_anonymized.json', function(err, data) {
+    res.write(data);
+    console.log(data)
+    res.end();
+ });
+	
 })
  
 app.listen(process.env.PORT || 3000)
