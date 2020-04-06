@@ -41,6 +41,10 @@ app.post('/partner', function (req, res) {
   }
   
 })
+
+app.get('/photo', function (req, res) {
+  console.log(req.body)
+})
  
 app.listen(process.env.PORT || 3000)
 
